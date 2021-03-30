@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed</title>
+    
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+   <link rel="stylesheet" type="text/css" href="styles.css">
+   <script src="https://kit.fontawesome.com/773aa9c01c.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+     <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        
+         <div class="modal-body">
+             <form><div class="form-group">
+                <label for="message-text" class="col-form-label"></label>
+                <textarea class="form-control" id="message-text"></textarea>
+                <div class="icons-new-post">
+                  <a class="link" href="#"><span style="color:grey"><i class="fas fa-camera" ></i></span></a>
+                  <a class="link" href="https://www.google.com/maps/@39.550051,-105.782067,6z?hl=es"><span style="color:grey"><i class="fas fa-map-marker-alt"></i></span></a>
+                  </div>
+              </div>
+            </form>  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-around fixed-top">
+            <div class="container">
+                <a class="navbar-brand"><i class="fab fa-instagram"></i> Instagram</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Create a new post</button><!-- Boton para crear el nuevo post-->
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-cog"></i>  
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Log Out</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+       </div>
+    </div>
+    
+    
+            
+            <div class="container-flex">
+                
+                <div class="Feed">
+                    <nav aria-label="Page navigation ">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link " href="index.html"><span style="color:grey"><i class="fas fa-th-large"></i></span></a></li>
+                            <li class="page-item "><a class="page-link " href="post.html"><span style="color:grey"><i class="fas fa-square"></i></span></a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="main-container">
+                        
+                        <div class="box">
+                        <div class="post">
+                            <div class=" title">
+                                <h3>Firts Photo</h3>
+                                <p>12/14</p>
+                            </div>
+                            <div class="photo">
+                                 <img src="https://images.unsplash.com/photo-1479502806991-251c94be6b15?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80">
+                                 </div>
+                            <div class="description">
+                                <p><strong>50 likes</strong></p>
+                                <p> This is my first photo of the feed. This is a multi line comment for testing purposes. I am learning to code with <strong>#BreatheCode</strong> </p> 
+                                <div class="icon1"> 
+                                    <i class="far fa-heart text-muted"> <input type="text"  placeholder="Comment..."></i>
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <div class="title">
+                                <h3> Some cute thing</h3>
+                                <p>12/17</p>
+                            </div>
+                            <div class="photo">
+                                 <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=749&q=80">
+                            </div>
+                            <div class="description">
+                                <p><strong>95 likes</strong></p>
+                                <p> The internet approves this cute dog... <strong>#BreatheCode</strong></p>
+                                <div class="icon1"> 
+                                    <i class="far fa-heart text-muted"> <input type="text"  placeholder="Comment..."></i>
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="post">
+                            <div class="title">
+                                <h3>And of course... food!</h3>
+                                <p>12/17</p>
+                            </div>
+                            <div class="photo">
+                                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+                            </div>
+                            <div class="description">
+                                <p><strong>76 likes</strong></p>
+                                <p>Because no photo feed is cool without some food on it <strong>#BreatheCode</strong></p>
+                                <div class="icon1"> 
+                                    <i class="far fa-heart text-muted"> <input type="text"  placeholder="Comment..."></i>
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="post">
+                            <div class="title">
+                                <h3>Magic City!</h3>
+                                <p>12/17</p>
+                            </div>
+                            <div class="photo">
+                                <img src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+                            </div>
+                            <div class="description">
+                                <p><strong>85 likes</strong></p>
+                                <p>Bright lights, big city... This culture has invaded the world!! <strong>#BreatheCode</strong></p>
+                                <div class="icon1"> 
+                                    <i class="far fa-heart text-muted"> <input type="text"  placeholder="Comment..."></i>
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post">
+                            <div class="title">
+                                <h3>ROCK ME</h3>
+                                <p>12/18</p>
+                            </div>
+                            <div class="photo">
+                                <img src="https://images.unsplash.com/photo-1565035010268-a3816f98589a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80">
+                            </div>
+                            <div class="description">
+                                <p><strong>100 likes</strong></p>
+                                <p> Take me to the place I love, take me all the way <br> <strong>#BreatheCode</strong></p>
+                                <div class="icon1"> 
+                                    <i class="far fa-heart text-muted"> <input type="text"  placeholder="Comment..."></i>
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post">
+                            <div class="title">
+                                <h3>Architecture</h3>
+                                <p>02/19</p>
+                            </div>
+                            <div class="photo">
+                                <img src="https://images.unsplash.com/photo-1616675550933-1ef35778b4d2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=376&q=80">
+                            </div>
+                            <div class="description">
+                                <p><strong>50 likes</strong></p>
+                                <p> alignment <br><strong>#BreatheCode</strong></p>
+                                <div class="icon1"> 
+                                    <i class="far fa-heart text-muted"> <input type="text"  placeholder="Comment..."></i>
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="post">
+                            <div class="title">
+                                <h3>ERROR</h3>
+                                <p>10/19</p>
+                            </div>
+                            <div class="photo">
+                                <img src="https://images.unsplash.com/photo-1611890798517-07b0fcb4a811?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80">
+                            </div>
+                            <div class="description">
+                                <p><strong>55 likes</strong></p>
+                                <p>Yes ... I'm out ... bye <br> <strong>#BreatheCode</strong></p>
+                                <div class="icon1"> 
+                                    <i class="far fa-heart text-muted"> <input type="text"  placeholder="Comment..."></i>
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post">
+                            <div class="title">
+                                <h3>Vintage</h3>
+                                <p>12/17</p>
+                            </div>
+                            <div class="photo">
+                                <img src="https://images.unsplash.com/photo-1616714108281-b7bf049d5c30?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80">
+                            </div>
+                            <div class="description">
+                                <p><strong>90 likes</strong></p>
+                                <p>memories of the forties. <br> <strong>#BreatheCode</strong></p>
+                                <div class="icon1"> 
+                                    <i class="far fa-heart text-muted"> <input type="text"  placeholder="Comment..."></i>
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="post">
+                            <div class="title">
+                                <h3>This is not a game</h3>
+                                <p>12/17</p>
+                            </div>
+                            <div class="photo">
+                                <img src="https://images.unsplash.com/photo-1531812960393-07fab8c1a28f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80">
+                            </div>
+                            <div class="description">
+                                <p><strong>65 likes</strong></p>
+                                <p>Hands up, buddy!<br> <strong>#BreatheCode</strong></p>
+                                <div class="icon1"> 
+                                    <i class="far fa-heart text-muted"> <input type="text"  placeholder="Comment..."></i>
+                                    <i class="fas fa-ellipsis-v"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                       </div>
+                    </div>
+                
+                </div>
+            </div>
+
+
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+</body>
+</html>
